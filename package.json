@@ -1,0 +1,31 @@
+{
+  "name": "file-firstline-replace",
+  "version": "0.0.1",
+  "description": "Replace the first line of a file with something else.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madwire-media/file-firstline-replace.git"
+  },
+  "keywords": [
+    "file",
+    "replace",
+    "firstline",
+    "first",
+    "line",
+    "first",
+    "line"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madwire-media/file-firstline-replace/issues"
+  },
+  "homepage": "https://github.com/madwire-media/file-firstline-replace#readme",
+  "dependencies": {
+    "tmp": "0.0.33"
+  }
+}
