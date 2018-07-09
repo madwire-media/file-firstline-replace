@@ -1,6 +1,6 @@
 {
   "name": "file-firstline-replace",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Replace the first line of a file with something else.",
   "main": "index.js",
   "scripts": {
