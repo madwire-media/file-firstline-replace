@@ -30,14 +30,22 @@ module.exports = function(filename, newFirstLine, cb) {
 
     })
     file2.on('finish', () => {
-      fs.rename(writeFile, filename, function(err) {
+      fs.copyFile(writeFile, filename, function(err) {
         if (err) {
-          console.log("error on temp file rename", writeFile, "->", filename, err)
+          console.log("LMCSV error on temp file copy", writeFile, "->", filename, err)
           cleanup()
           return cb(err)
         }
-        cleanup()
-        return cb(null);
+        fs.unlink(writeFile, (err) =>{
+          if (err) {
+            console.log("LMCSV error removing temp file", writeFile, err)
+            cleanup()
+            return cb(err)
+          }
+          cleanup()
+          return cb(null);
+        })
+
       })
     })
   })
