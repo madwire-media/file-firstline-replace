@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/madwire-media/file-firstline-replace#readme",
   "dependencies": {
-    "tmp": "0.0.33"
+    "tmp": "0.2.1"
   }
 }
