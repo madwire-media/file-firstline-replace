@@ -51,7 +51,7 @@ module.exports = function(filename, newFirstLine, cb) {
   })
 }
 
-function generateRando(len) {
+function generateRandomText(len) {
   if (typeof len != "number") len = 12
   var text = "";
   var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
